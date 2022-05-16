@@ -80,7 +80,7 @@ a:active {
 
 /* MARK */
 mark {
-    background-color: var(--text-mark);
+    background-color: #9D18A3;
     color: var(--background-primary);
 }
 
