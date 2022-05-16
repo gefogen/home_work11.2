@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if content %}
+        <h1>Найдено со скиллом: {{quantity}}</h1>
+        {% for people in content %}
+            <p><a href="/candidate/{{people['id']}}">{{people['name']}}</a></p>
+        {% endfor %}
+    {% else %}
+        <h1>Нет такого кандидата с таким навыком</h1>
+    {% endif %}
+</body>
+</html>
