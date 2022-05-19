@@ -35,3 +35,5 @@ def get_candidates_by_name(candidate_name):
         if candidate_name.lower() in people["name"].lower():
             men.append(people)
     return men
+
+# print(get_candidates_by_name(""))

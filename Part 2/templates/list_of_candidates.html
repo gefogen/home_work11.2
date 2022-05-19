@@ -9,5 +9,15 @@
 {% for people in content %}
     <p><a href="/candidate/{{people['id']}}">{{people['name']}}</a></p>
 {% endfor %}
+<form action="/search/">
+    Поиск по совпадению имён:
+    <input type="text" name="query">
+    <input type="submit" value="Отправить">
+</form></br>
+<form action="/skill/">
+    Поиск по совпадению cкилов:
+    <input type="text" name="query">
+    <input type="submit" value="Отправить">
+</form>
 </body>
 </html>
